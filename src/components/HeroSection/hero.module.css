@@ -1,0 +1,50 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  z-index: 10;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.animatedText {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    margin-top: 2rem;
+  }
+
+  .video {
+    width: 220px;
+  }
+}
