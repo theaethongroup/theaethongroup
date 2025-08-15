@@ -57,11 +57,19 @@ export async function POST(req: Request) {
       success: true,
       message: "User saved successfully",
     });
-  } catch (error: any) {
-    console.error("❌ Google Sheets Error:", error);
-    return NextResponse.json(
-      { error: "Failed to save user data", details: error.message },
-      { status: 500 }
-    );
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error("❌ Google Sheets Error:", error);
+      return NextResponse.json(
+        { error: "Failed to save user data", details: error.message },
+        { status: 500 }
+      );
+    } else {
+      console.error("❌ Unknown Google Sheets Error:", error);
+      return NextResponse.json(
+        { error: "Failed to save user data", details: String(error) },
+        { status: 500 }
+      );
+    }
   }
 }

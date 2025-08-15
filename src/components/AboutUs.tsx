@@ -36,7 +36,8 @@ const AboutUsSection = () => {
     { id: 2, name: 'Client 2', logo: '/logos/2.png' },
     { id: 3, name: 'Client 3', logo: '/logos/3.png' },
     { id: 4, name: 'Client 4', logo: '/logos/4.png' },
-    { id: 5, name: 'Client 5', logo: '/logos/5.png' }
+    { id: 5, name: 'Client 5', logo: '/logos/5.png' },
+    { id: 6, name: 'Client 6', logo: '/logos/6.png' }
   ];
 
   // Create a duplicated array for seamless marquee loop

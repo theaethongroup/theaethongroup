@@ -52,7 +52,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-[#f1c75b] transition-colors duration-300 flex items-center">
+                <Link href="/#AboutUs" className="text-gray-400 hover:text-[#f1c75b] transition-colors duration-300 flex items-center">
                   <svg className="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                   </svg>
@@ -60,29 +60,15 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-[#f1c75b] transition-colors duration-300 flex items-center">
+                <Link href="#OurServicesSection" className="text-gray-400 hover:text-[#f1c75b] transition-colors duration-300 flex items-center">
                   <svg className="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                   </svg>
                   Our Services
                 </Link>
               </li>
-              <li>
-                <Link href="/portfolio" className="text-gray-400 hover:text-[#f1c75b] transition-colors duration-300 flex items-center">
-                  <svg className="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-400 hover:text-[#f1c75b] transition-colors duration-300 flex items-center">
-                  <svg className="h-4 w-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Contact Us
-                </Link>
-              </li>
+           
+              
             </ul>
           </div>
 

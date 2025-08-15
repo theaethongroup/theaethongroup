@@ -1,8 +1,12 @@
 'use client'
 import { FlipWords } from '@/components/ui/flip-words'
-import React from 'react'
+import React, { useState } from 'react'
+import Chatbot from '../Chatbot';
 
-export default function HeroSection () {
+export default function HeroSection() {
+  
+      const [chatbotOpen, setChatbotOpen] = useState(false);
+      const [chatbotMode, setChatbotMode] = useState<'getInTouch'>('getInTouch');
   return (
     <section className='w-full min-h-screen bg-black flex flex-col md:flex-row items-center justify-between px-6 md:px-20 pt-28 sm:pt-32 md:pt-40 py-12 gap-10 md:gap-6'>
       {/* ✅ TEXT FIRST */}
@@ -35,7 +39,12 @@ export default function HeroSection () {
         </p>
 
         <div className='mt-8'>
-          <button className='px-6 py-3 rounded-full bg-[#f1c75b] text-black text-base sm:text-lg font-bold hover:bg-yellow-400 hover:scale-105 transition-all duration-300 shadow-lg'>
+          <button
+                onClick={() => {
+              setChatbotMode('getInTouch');
+              setChatbotOpen(true);
+            }}
+            className='px-6 py-3 rounded-full bg-[#f1c75b] text-black text-base sm:text-lg font-bold hover:bg-yellow-400 hover:scale-105 transition-all duration-300 shadow-lg'>
             Get Started
           </button>
         </div>
@@ -52,6 +61,12 @@ export default function HeroSection () {
           className='rounded-[2.5rem] shadow-xl w-full'
         />
       </div>
+        {/* Chatbot Component */}
+                  <Chatbot 
+                    mode={chatbotMode} 
+                    triggerOpen={chatbotOpen} 
+                    onClose={() => setChatbotOpen(false)}
+                  />
     </section>
   )
 }

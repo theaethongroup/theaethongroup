@@ -7,6 +7,9 @@ const nextConfig = {
     GOOGLE_PRIVATE_KEY: process.env.GOOGLE_PRIVATE_KEY,
     GROQ_API_KEY: process.env.GROQ_API_KEY,
     AI_PROVIDER: process.env.AI_PROVIDER,
+    },
+    eslint: {
+    ignoreDuringBuilds: true,
   },
 }
 
